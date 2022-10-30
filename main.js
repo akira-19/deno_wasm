@@ -9,4 +9,4 @@ import { instantiate } from "https://raw.githubusercontent.com/denoland/wasmbuil
 
 const { add } = await instantiate();
 
-serve((req: Request) => new Response(add(1, 2)));
+serve((req) => new Response(add(1, 2)));
